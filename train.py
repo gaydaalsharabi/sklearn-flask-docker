@@ -40,10 +40,10 @@ class Perceptron:
         return np.where(self.net_input(X) >= 0, 1, -1)
 
 
-# Create a flask
+# Creating a flask
 app = Flask(__name__)
 
-# Create an API end point
+# Creating an API end point
 @app.route('/api/v1.0/predict', methods=['GET'])
 def get_prediction():
 
